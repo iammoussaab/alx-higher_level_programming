@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-for i in range(10):
+for i in range(0, 8):
     for j in range(i + 1, 10):
-        print(f"{i}{j:01d}", end=", " if i != 9 or j != 8 else "\n")
+        print("{:d}{:d}".format(i, j), end=', ')
+print("{:d}{:d}".format(i + 1, j))
