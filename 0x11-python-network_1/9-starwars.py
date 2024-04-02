@@ -7,9 +7,6 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    """
-    takes in a string and sends a search request to the Star Wars API
-    """
     url = 'https://swapi.co/api/people/?search={}'.format(argv[1])
 
     r = requests.get(url)
